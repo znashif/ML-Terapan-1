@@ -45,28 +45,35 @@ Sumber dataset:
 - **Ripeness** : Tahapan kematangan buah apel.
 - **Acidity** : Tingkat keasaman buah apel.
 - **Quality** : Label target/output yang merepresentasikan kualitas keseluruhan dari apel (misalnya _Low_, _Medium_, _High_ — akan dicek format pastinya). Fitur ini akan digunakan sebagai **label klasifikasi** dalam proyek ini.
-- ![Pasted image 20250422223940](https://github.com/user-attachments/assets/a1a3ecf1-62d9-4db7-9917-9f9ba4c828c4)
+  ![Pasted image 20250422223940](https://github.com/user-attachments/assets/a1a3ecf1-62d9-4db7-9917-9f9ba4c828c4)
 
 
 ### Ukuran Data
 - Terdiri dari 4001 baris data dengan 9 kolom
 - Terdapat 1 data NaN
+
   ![Pasted image 20250422224004](https://github.com/user-attachments/assets/695c32e8-fe36-433d-b8ae-4ea4ba99aaca)
 - Hanya kolom Acidity dan Quality yang bertipe data object, sisanya bertipe float64
+
   ![Pasted image 20250422223940](https://github.com/user-attachments/assets/c2fc64d4-89c0-4b87-b5ff-d41572a3b706)
 - Terdapat beberapa outlier
+
   ![Pasted image 20250422224041](https://github.com/user-attachments/assets/c5cc0f2e-0027-4511-be0d-13ca7f4def85)
 
 - Persebaran Qualitas merata
+
   ![Pasted image 20250422224134](https://github.com/user-attachments/assets/2c317754-06aa-4f09-bec2-3ad384118cc2)
 
 - Fitur lain juga terdistribusi normal
+
   ![Pasted image 20250422224205](https://github.com/user-attachments/assets/4e23da67-3538-4c9d-bf42-b7d44ce957ff)
 
 - Berikut Heatmap untuk hubungan antar 2 fitur
+
   ![Pasted image 20250422224235](https://github.com/user-attachments/assets/f2b4edca-ddf4-4cd0-90d9-0f1fa689fd12)
 
 - Dan scatter plot untuk multivariate analysis
+
   ![Pasted image 20250422224330](https://github.com/user-attachments/assets/b4ca94df-a6a4-4b80-81c2-3428a71e068b)
 
 
@@ -141,9 +148,7 @@ Bagian ini membahas metrik evaluasi yang digunakan untuk mengukur performa model
     - Digunakan untuk mengukur rata-rata kuadrat selisih antara nilai prediksi dan nilai aktual.
     - Semakin kecil nilai MSE, semakin baik performa model.
     - Formula:
-$$
-MSE = 1/n * Σ(y_i - ŷ_i)^2
-$$
+$ MSE = 1/n * Σ(y_i - ŷ_i)^2 $
 di mana:    
 - $n$ adalah jumlah data    
 - $y_i$ adalah nilai aktual    
